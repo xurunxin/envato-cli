@@ -1,0 +1,31 @@
+{
+  "name": "envato-cli",
+  "version": "0.1.0",
+  "description": "Agent-oriented Envato App CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "build": "tsc",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "puppeteer-core": "^25.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "envato": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true
+}
